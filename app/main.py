@@ -8,6 +8,8 @@ def main():
             continue
         else:
             command, *params = args
+            if command == "exit":
+                return 0
             print(f"{command}: command not found")
 if __name__ == "__main__":
     main()
