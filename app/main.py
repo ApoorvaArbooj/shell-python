@@ -10,6 +10,8 @@ def main():
             command, *params = args
             if command == "exit":
                 return 0
+            elif command == "echo":
+                print(*params)
             print(f"{command}: command not found")
 if __name__ == "__main__":
     main()
