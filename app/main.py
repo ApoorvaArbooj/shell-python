@@ -12,6 +12,7 @@ def main():
                 return 0
             elif command == "echo":
                 print(*params)
-            print(f"{command}: command not found")
+            else:
+                print(f"{command}: command not found")
 if __name__ == "__main__":
     main()
